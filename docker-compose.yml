@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  duck_typing_vs_di:
+    image: "node:18-alpine"
+    container_name: "duck_typing_vs_di"
+    working_dir: "/app"
+    user: 1000:1000
+    volumes:
+      - ./:/app:rw,Z
